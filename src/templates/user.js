@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react'  
 import Link from 'gatsby-link'
 
-const UserTemplate = ({ data }) => (
+const UserTemplate = ({ data }) => (  
   <div>
     <h1>{data.strapiUser.username}</h1>
     <ul>
@@ -18,7 +18,6 @@ const UserTemplate = ({ data }) => (
 )
 
 export default UserTemplate
-
 export const query = graphql`
   query UserTemplate($id: String!) {
     strapiUser(id: { eq: $id }) {
